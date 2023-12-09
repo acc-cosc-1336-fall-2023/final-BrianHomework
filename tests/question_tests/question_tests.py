@@ -8,7 +8,6 @@ class Test_Config(unittest.TestCase):
 
     def test_question_a_config(self):
 
-
         dna_string1 = "GATATATGCATATACTT"
         dna_string2 = "ATAT"
         expected_result = (2, 4, 10)

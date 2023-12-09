@@ -17,7 +17,7 @@ def main():
             break
         else:
             print("Invalid option. Please select 1 or 2.")
-
+main()
 '''''
 def main():
     while True:

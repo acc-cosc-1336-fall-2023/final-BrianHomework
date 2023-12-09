@@ -12,13 +12,3 @@ def multiplication_table(rows, cols):
 def display_table(table):
     for row in table:
         print("\t".join(map(str, row)))
-
-# Set the number of rows and columns for the table
-rows = 10
-cols = 10
-
-# Generate the multiplication table
-table = multiplication_table(rows, cols)
-
-# Display the multiplication table
-display_table(table)

@@ -34,7 +34,7 @@ def stock_purchase_history():
     for symbol, company_name in stocks_dict.items():
         print("{:<10} {:<20}".format(symbol, company_name))
 
-stock_purchase_history()
+#stock_purchase_history()
 
 def main():
     while True:
