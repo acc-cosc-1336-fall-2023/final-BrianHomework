@@ -22,7 +22,7 @@ def get_stock_list(file_path):
     return stock_dict
 
 def display_stock_list(stock_list):
-    for symbols, stock in stock_list.items():
+    for symbol, stock in stock_list.items():
         print(f"{stock.get_company_name()} {stock.get_symbol()}")
 
 
@@ -36,7 +36,7 @@ def create_stock_file(file_path):
 
     enter_file.close()
 
-create_stock_file("get_stock_list.txt")
-
-list = (get_stock_list("get_stock_list.txt"))
-display_stock_list(list)
+if __name__ == "__main__":
+    create_stock_file("get_stock_list.txt")
+    stock_list = (get_stock_list("get_stock_list.txt"))
+    display_stock_list(stock_list)
